@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppLayout from "./components/layout/AppLayout";
+import "antd/dist/antd.css";
 
 class App extends React.Component{
     render(){
         return (
-            <div>
-                hello
-            </div>
+            <AppLayout />
         );
     }
 }
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
