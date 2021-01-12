@@ -1,18 +1,21 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import CryptoPage from "../pages/CryptoPage/CryptoPage.js";
-import Test from "../pages/Test/Test.js";
+import Bourse from "../pages/Bourse/Bourse.js";
+import Accueil from "../pages/Accueil/Accueil.js"
 
 import {
     CRYPTOPAGE,
-    TEST,
+    BOURSE,
+    ACCUEIL,
 } from "../../constants/routes.js";
 
 const Routes = () => {
     return (
         <Switch>
+            <Route path={ACCUEIL} exact component={Accueil} />
             <Route path={CRYPTOPAGE} exact component={CryptoPage} />
-            <Route path={TEST} exact component={Test} />
+            <Route path={BOURSE} exact component={Bourse} />
         </Switch>
 
     )

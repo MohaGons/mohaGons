@@ -1,0 +1,9 @@
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected.linkHome{
+  background-color: transparent;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected.link,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected.link{
+  background-color: #1890ff;
+}

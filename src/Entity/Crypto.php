@@ -32,6 +32,11 @@ class Crypto
      */
     private $description;
 
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $bourse;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -75,6 +80,18 @@ class Crypto
 
     public function toArray()
     {
-        return ['id' => $this->id, 'name' => $this->name, 'capitalisation' => $this->capitalisation, 'description' => $this->description];
+        return ['id' => $this->id, 'name' => $this->name, 'capitalisation' => $this->capitalisation, 'description' => $this->description, 'bourse' => $this->bourse];
+    }
+
+    public function getBourse(): ?float
+    {
+        return $this->bourse;
+    }
+
+    public function setBourse(float $bourse): self
+    {
+        $this->bourse = $bourse;
+
+        return $this;
     }
 }

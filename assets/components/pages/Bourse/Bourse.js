@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Card } from 'antd';
-import "../CryptoPage/cryptopage.css"
-import banniere from './banniereCrypto.jpg';
+import './bourse.css'
+import { Descriptions } from 'antd';
 
-
-const CryptoPage = () => {
+const Bourse = () => {
 
     //States initialization
     const [cryptos, setCryptos] = useState();
@@ -23,19 +21,15 @@ const CryptoPage = () => {
     }, []);
 
     return (
-
-        <div className="site-card-border-less-wrapper">
-            <img class="banCrypto" src={banniere} width="800" height="200" />
+        <Descriptions title="Bourse de la crypto monnaie" bordered>
             {cryptos && cryptos.map((crypto, i) =>
-                <Card key={i} title={crypto.name} bordered={false} style={{ width: 1000 }}>
-                    <p>Capitalisation : {crypto.capitalisation} Mds€</p>
-                    <p>{crypto.description}</p>
-                </Card>
+                <Descriptions.Item label={crypto.name}>{crypto.bourse}</Descriptions.Item>
             )}
-        </div>
-
+        </Descriptions>
     )
 };
 
-export default CryptoPage;
+export default Bourse;
+
+
 

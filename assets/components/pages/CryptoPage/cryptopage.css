@@ -1,4 +1,10 @@
 .site-card-border-less-wrapper {
     padding: 30px;
     background: #ececec;
+    padding-bottom: 30px;
+}
+
+.banCrypto {
+    padding-bottom: 20px;
+    padding-left: 200px;
 }

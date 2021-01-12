@@ -1,0 +1,13 @@
+.Carousel {
+    margin: auto;
+    width: 50%;
+}
+
+.TextBienvenue {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.Description {
+    padding-top: 20px;
+}

@@ -1,6 +1,10 @@
 import React from "react";
 import { Layout, Menu } from "antd";
 import { NavLink } from 'react-router-dom';
+import "../LayoutHeader/layoutheader.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+
 
 const { Header } = Layout;
 
@@ -14,13 +18,13 @@ const LayoutHeader = () => {
                 style={{ lineHeight: '64px' }}
             >
                 <Menu.Item className="linkHome"><NavLink exact activeClassName="active" to="/">
-                    {/* <img src={} width="180" height="50"/> */}
-                </NavLink></Menu.Item>
-                <Menu.Item className="link"><NavLink exact activeClassName="active" to="/test">
-                    Liste des tickets
+                    <FontAwesomeIcon icon={faHome} size="2x"/>
                 </NavLink></Menu.Item>
                 <Menu.Item className="link"><NavLink exact activeClassName="active" to="/cryptopage">
-                    Mes tickets
+                    Les cryptomonnaies
+                </NavLink></Menu.Item>
+                <Menu.Item className="link"><NavLink exact activeClassName="active" to="/bourse">
+                    La bourse
                 </NavLink></Menu.Item>
             </Menu>
         </Header>

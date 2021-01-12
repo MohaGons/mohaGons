@@ -1,4 +1,4 @@
-export const LANDING = "/";
+export const ACCUEIL = "/";
 
 export const CRYPTOPAGE = "/cryptopage";
-export const TEST = "/test";
+export const BOURSE = "/bourse";
