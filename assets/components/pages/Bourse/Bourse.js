@@ -30,6 +30,3 @@ const Bourse = () => {
 };
 
 export default Bourse;
-
-
-
