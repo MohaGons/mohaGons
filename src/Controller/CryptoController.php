@@ -9,8 +9,8 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\CryptoRepository;
 
 /**
-     * @Route("/api/crypto", name="crypto")
-     */
+* @Route("/api/crypto", name="crypto")
+*/
 class CryptoController extends AbstractController
 {
     private $em;

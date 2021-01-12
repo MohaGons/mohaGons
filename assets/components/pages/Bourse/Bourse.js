@@ -23,7 +23,7 @@ const Bourse = () => {
     return (
         <Descriptions title="Bourse de la crypto monnaie" bordered>
             {cryptos && cryptos.map((crypto, i) =>
-                <Descriptions.Item label={crypto.name}>{crypto.bourse}</Descriptions.Item>
+                <Descriptions.Item key={i} label={crypto.name}>{crypto.bourse}</Descriptions.Item>
             )}
         </Descriptions>
     )

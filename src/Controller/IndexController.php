@@ -11,7 +11,7 @@ class IndexController extends AbstractController
     /**
      * @Route("/", name="Accueil")
      * @Route("/cryptopage", name="cryptopage")
-     * @Route("/test", name="test")
+     * @Route("/bourse", name="bourse")
      */
     public function index(): Response
     {

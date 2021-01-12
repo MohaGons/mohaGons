@@ -25,7 +25,7 @@ const CryptoPage = () => {
     return (
 
         <div className="site-card-border-less-wrapper">
-            <img class="banCrypto" src={banniere} width="800" height="200" />
+            <img className="banCrypto" src={banniere} width="800" height="200" />
             {cryptos && cryptos.map((crypto, i) =>
                 <Card key={i} title={crypto.name} bordered={false} style={{ width: 1000 }}>
                     <p>Capitalisation : {crypto.capitalisation} Mds€</p>
